@@ -90,8 +90,8 @@ export default function RootLayout({ children }) {
     "@context": "https://schema.org",
     "@type": "Event",
     name: "Semana Acadêmica da Computação da UFSCar",
-    startDate: "2025-09-29T09:00", 
-    endDate: "2025-10-03T18:00",
+    startDate: "2026-10-05T09:00",  // TODO: confirmar data de início / fim
+    endDate: "2026-10-09T18:00",
     eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
     eventStatus: "https://schema.org/EventScheduled",
     location: {

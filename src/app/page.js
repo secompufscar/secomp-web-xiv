@@ -15,12 +15,15 @@ import Patrocinadores from "../components/patrocinadores/page"
 import Countdown from '../components/countdown'
 import Downloads from "@/components/download";
 import CustomButton from "@/components/buttons/buttons";
+import TerminalLog from "@/components/terminal";
+import { eventStart, eventEnd } from "@/data/eventDate";
 import "./gradient.css"
 
 export default function Page() {
   const [show, setShow] = useState(false);
-  const [mainText, setMainText] = useState("Vem aí a SECOMP UFSCAR 2025");
-  const words = ["SECOMP XIII", "•", "UFSCAR", "•"];
+  const [showTitle, setShowTitle] = useState(false);
+  const [mainText, setMainText] = useState("Vem aí a SECOMP UFSCAR 2026");
+  const words = ["SECOMP XIV", "•", "UFSCAR", "•"];
 
   useEffect(() => {
     const lenis = new Lenis({ lerp: 0.05, wheelMultiplier: 1.2 });
@@ -38,42 +41,52 @@ export default function Page() {
   }, []);
 
   useEffect(() => {
-    const hoje = new Date();
-    const inicioEvento = new Date("2025-09-29T12:00:00-03:00");
-    const fimEvento = new Date("2025-10-03T23:59:59-03:00");
+    const today = new Date();
 
-    if (hoje < inicioEvento) {
-      setMainText("Vem aí a SECOMP UFSCAR 2025");
-    } else if (hoje >= inicioEvento && hoje <= fimEvento) {
-      setMainText("Está no ar a SECOMP UFSCAR 2025");
+    if (today < eventStart) {
+      setMainText("VEM AÍ");
+    } else if (today >= eventStart && today <= eventEnd) {
+      setMainText("ESTÁ NO AR A");
     } else {
-      setMainText("Preparando a SECOMP UFSCAR 2026");
+      setMainText("VEM AÍ");
     }
+  }, []);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setShowTitle(true), 1000);
+    return () => clearTimeout(timer);
   }, []);
 
   return (
     <>
       <NavBar />
+VEM AÍ
+SECOMP
+      <div className={`gradient relative flex justify-center items-start min-h-screen pt-[250px] overflow-hidden`}>
+        <TerminalLog className="hidden md:block absolute top-28 left-8 lg:left-16 text-lg lg:text-2xl text-white/70 pointer-events-none select-none z-0" />
 
-      <div className={`gradient flex justify-center items-start min-h-screen pt-[250px]`}>
-        <div className={`px-16 pt-28 max-w-[1200px] text-white flex flex-col text-[2rem] text-center justify-center items-center flex-1 flex-grow flex-shrink-4 ${oswald.className}`}>
+        <div className={`relative z-10 px-16 pt-28 max-w-[1200px] text-white flex flex-col text-[2rem] text-center justify-center items-center flex-1 flex-grow flex-shrink-4 ${oswald.className}`}>
           <TextType
             text={[mainText]}
             typingSpeed={60}
             pauseDuration={1500}
             showCursor={true}
-            cursorCharacter="."
+            cursorCharacter=""
             cursorBlinkDuration={0.8}
             className="text-[#ededed] text-7xl/[1.5] sm:text-9xl/[1.5] xl:text-[9rem]/[1.5] mb-4 font-bold uppercase tracking-wide"
           />
 
-          {/* <h6 
-            className={`mt-16 md:mt-20 md:text-[48px] lg:text-8xl font-light px-16 py-12 border border-primary rounded-full leading-[1.5] transition-opacity duration-1000
-            ${robotoMono.className} 
-            ${show ? "opacity-100" : "opacity-0"}`}
-          >
-              ?/? até ?/?
-          </h6> */}
+          <div className={`flex flex-col items-center justify-center transition-opacity duration-1000 ${showTitle ? "opacity-100" : "opacity-0"}`}>
+            <h2 className={`text-6xl sm:text-8xl xl:text-[8rem] font-bold uppercase tracking-wide text-[#ededed] mt-4 ${oswald.className}`}>
+              SECOMP
+            </h2>
+            <span 
+              style={{ color: '#ff0000' }} 
+              className={`text-6xl sm:text-8xl xl:text-[8rem] font-bold tracking-widest text-center uppercase my-2 drop-shadow-[0_0_15px_rgba(255,0,0,0.6)] ${oswald.className}`}
+            >
+              {new Date() < eventEnd ? "XIV" :  `${new Date().getFullYear()+1}`}
+            </span>
+          </div>
 
           <Countdown />
         </div>
@@ -181,7 +194,7 @@ export default function Page() {
                       group w-full aspect-square border border-[#F8F8F8]/10 rounded-2xl flex flex-col items-start justify-end p-[40px] sm9:p-8 
                       text-white text-[1.5rem] font-medium ${inter.className} transition-all duration-300 hover:scale-105 hover:border-secondary/80
                     `}
-                    spotlightColor="rgba(0, 170, 255, 0.3)"
+                    spotlightColor="rgba(255, 0, 0, 0.3)"
                   >
                     <div className="text-secondary">{item.icon}</div>
                     <span className="mt-6">{item.label}</span>
@@ -203,7 +216,7 @@ export default function Page() {
             </AnimatedContent>
           </div>
 
-          <div id="patrocinadores" className="w-full mt-36 md:mt-64 px-8 sm8:px-16 lg:px-48">
+          {/*<div id="patrocinadores" className="w-full mt-36 md:mt-64 px-8 sm8:px-16 lg:px-48">
             <div className="flex flex-row flex-wrap items-center gap-12">
               <TextType
                 text={["PATROCINADORES"]}
@@ -222,7 +235,7 @@ export default function Page() {
             <p className={`mt-12 text-gray text-[1.5rem] font-light leading-[1.8] tracking-wide ${robotoMono.className}`}>Empresas que confiam em nós e fazem o evento acontecer</p>
 
             <Patrocinadores />
-          </div>
+          </div>*/}
 
           <div id="faq" className="w-full mt-36 md:mt-56 px-8 sm8:px-16 lg:px-48">
             <TextType

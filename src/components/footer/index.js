@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <div className={`px-8 py-12 sm:py-8 sm:px-16 ${inter.className}`}>
             <div className="w-full h-auto flex flex-col items-center text-center gap-4 lg:h-24 lg:flex-row lg:justify-between lg:text-left">
-                <p className={`text-white text-xl text-[#EEE]`}>&copy;2025 SECOMP UFSCar. Todos os direitos reservados.</p>
+                <p className={`text-white text-xl text-[#EEE]`}>&copy;2026 SECOMP UFSCar. Todos os direitos reservados.</p>
 
                 <div className="flex flex-col items-center gap-12 text-xl mt-6 lg:mt-0 lg:flex-row">
                     <div className="flex flex-row gap-6">

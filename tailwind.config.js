@@ -17,9 +17,9 @@ module.exports = {
       white: "#FFFFFF",
       black: "#0a0a0a",
       gray: "#a0a0a0",
-      primary: "#205aff",
-      secondary: "#2fbaffff",
-      vibrantBlue: "#0022EE",
+      primary: "#FF202D",
+      secondary: "#FF0000",
+      vibrantBlue: "#FF0000",
     },
     screens: {
       xsm: "425px",

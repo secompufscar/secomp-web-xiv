@@ -2,11 +2,10 @@
 import { useEffect, useState } from "react";
 import UseCountdown from "@/hooks/useCountdown";
 import { oswald, robotoMono } from "@/utils/fonts"
+import { eventStart } from "@/data/eventDate";
 
 export default function Countdown() {
-  // Data alvo: 29/09/2025 às 12:00
-  const targetDate = new Date("2025-09-29T12:00:00-03:00");
-  const countdown = UseCountdown(targetDate.getTime());
+  const countdown = UseCountdown(eventStart.getTime());
   const [show, setShow] = useState(false);
 
 

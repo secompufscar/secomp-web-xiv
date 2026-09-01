@@ -1,6 +1,6 @@
 import { Presentation, BookOpen, Trophy, Users, Mic, Gamepad2 } from "lucide-react";
 
-export const content = [
+export const content = [  // TODO: adequar ao conteúdo da SECOMP XIV
   { 
     label: "Palestras", 
     icon: <Presentation size={36} />, 
