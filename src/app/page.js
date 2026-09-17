@@ -167,7 +167,7 @@ export default function Page() {
                       <p>
                         A programação é diversa e feita para todos os gostos: <b className="text-white">palestras</b> e <b className="text-white"> minicursos </b>
                         práticos para ampliar conhecimentos, <b className="text-white">competições</b> como Hackathon, Desafio de Programadores e CTF para testar habilidades,
-                        além da tradicional <b className="text-white">Gamenight</b> para relaxar e se divertir. Uma experiência completa, cheia de aprendizado, desafios e novas conexões!
+                        além do novo <b className="text-white">Lual do Diretório Acadêmico da Coumputação</b> para relaxar e se divertir. Uma experiência completa, cheia de aprendizado, desafios e novas conexões!
                       </p>
                     </div>
                   </div>
@@ -203,7 +203,7 @@ export default function Page() {
                 {content.map((item, i) => (
                   <SpotlightCard
                     key={i}
-                    className={`
+                    className={`https://github.com/secompufscar/secomp-web-xiv
                       group w-full aspect-square border border-[#F8F8F8]/10 rounded-2xl flex flex-col items-start justify-end p-[40px] sm9:p-8 
                       text-white text-[1.5rem] font-medium ${inter.className} transition-all duration-300 hover:scale-105 
                       ${i % 2 === 0 ? "hover:border-accentGreen/80" : "hover:border-secondary/80"}
@@ -282,8 +282,8 @@ export default function Page() {
             </AnimatedContent>
           </div> */}
 
-          <div id="contato" className="flex items-center justify-end py-24 w-full text-black mt-32 md:mt-64 px-8 sm:px-16 bg-[url('/estande-magalu.png')] bg-cover bg-center bg-no-repeat">
-            <div className="max-w-[460px] w-full h-full bg-[#F8F8F8] p-[3.7rem] sm:p-20 rounded-xl">
+          <div id="contato" className="flex items-center justify-end py-24 w-full text-white mt-32 md:mt-64 px-8 sm:px-16 bg-[url('/estande-magalu.png')] bg-cover bg-center bg-no-repeat">
+            <div className="max-w-[460px] w-full h-full bg-[#070707] p-[3.7rem] sm:p-20 rounded-xl">
               <TextType
                 text={["CONTATO"]}
                 typingSpeed={80}
@@ -291,18 +291,18 @@ export default function Page() {
                 cursorCharacter=""
                 startOnVisible={true}
                 cursorBlinkDuration={0.8}
-                textColors={"#000000"}
+                textColors={"#FFFFFF"}
                 className={`text-4xl md:text-5xl font-bold text-start ${oswald.className}`}
               />
 
-              <p className={`mt-8 text-black text-[1.6rem] font-extralight ${inter.className}`}>Entre em contato com a nossa equipe</p>
-              <p className={`mt-3 text-[#000] text-[1.6rem] break-words ${robotoMono.className}`}>coordenacao@secompufscar.com.br</p>
+              <p className={`mt-8 text-white text-[1.6rem] font-extralight ${inter.className}`}>Entre em contato com a nossa equipe</p>
+              <p className={`mt-3 text-[#FFF] text-[1.6rem] break-words ${robotoMono.className}`}>coordenacao@secompufscar.com.br</p>
 
-              <p className={`mt-12 text-black text-[1.6rem] font-extralight ${inter.className}`}>Você pode nos encontrar aqui</p>
-              <p className={`mt-3 text-[#000] text-[1.6rem] break-words ${robotoMono.className}`}>Departamento de Computação - DC</p>
+              <p className={`mt-12 text-white text-[1.6rem] font-extralight ${inter.className}`}>Você pode nos encontrar aqui</p>
+              <p className={`mt-3 text-[#FFF] text-[1.6rem] break-words ${robotoMono.className}`}>Departamento de Computação - DC</p>
 
-              <p className={`mt-12 text-black text-[1.6rem] font-extralight ${inter.className}`}>UFSCar</p>
-              <p className={`mt-3 text-[#000] text-[1.6rem] break-words ${robotoMono.className}`}>Rodovia Washington Luís, km 235, São Carlos - SP, CEP 13565-905</p>
+              <p className={`mt-12 text-white text-[1.6rem] font-extralight ${inter.className}`}>UFSCar</p>
+              <p className={`mt-3 text-[#FFF] text-[1.6rem] break-words ${robotoMono.className}`}>Rodovia Washington Luís, km 235, São Carlos - SP, CEP 13565-905</p>
             </div>
           </div>
         </div>

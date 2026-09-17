@@ -49,7 +49,7 @@ export default function App() {
                                 </button>
                             }
 
-                            {pageIndex !== 4 &&
+                            {pageIndex !== 3 &&
                                 <button onClick={handleNext} className="flex items-center justify-center py-3 px-6 text-secondary/80 text-lg border border-secondary/80 rounded-md uppercase tracking-wider hover:border-accentGreen hover:text-accentGreen transition-colors duration-300" >
                                     <span className="text-white/30 mr-1">[</span>Próximo<span className="text-white/30 ml-1">]</span>
                                 </button>
@@ -123,28 +123,15 @@ export default function App() {
 
                     {/* Paginação (bolinhas) */}
                     <div className="flex justify-between items-center mt-10">
-                        <button
-                            onClick={handlePrev}
-                            className={`${pageIndex !== 0 ? "opacity-100" : "opacity-0 pointer-events-none"} flex items-center justify-center py-3 px-6 text-[#F8F8F8]/70 text-lg border border-[#F8F8F8]/70 rounded-md uppercase tracking-wider hover:border-accentGreen hover:text-accentGreen transition-colors duration-300`}>
-                            <span className="text-white/30 mr-1">[</span>Anterior<span className="text-white/30 ml-1">]</span>
-                        </button>
-
                         <div className="flex justify-between space-x-4">
                             {weekData.map((_, i) => (
                                 <button
                                     key={i}
                                     onClick={() => setPageIndex(i)}
-                                    className={`w-3 h-3 rounded-full transition-colors duration-300 ${i === pageIndex ? "bg-accentGreen" : "bg-white/30"
-                                        }`}
+                                    className={`w-3 h-3 rounded-full transition-colors duration-300 ${i === pageIndex ? "bg-accentGreen" : "bg-white/30"}`}
                                 />
                             ))}
                         </div>
-
-                        <button
-                            onClick={handleNext}
-                            className={`${pageIndex !== 4 ? "opacity-100" : "opacity-0 pointer-events-none"} flex items-center justify-center py-3 px-6 text-[#F8F8F8]/70 text-lg border border-[#F8F8F8]/70 rounded-md uppercase tracking-wider hover:border-accentGreen hover:text-accentGreen transition-colors duration-300`} >
-                            <span className="text-white/30 mr-1">[</span>Próximo<span className="text-white/30 ml-1">]</span>
-                        </button>
                     </div>
                 </div>
             </div>
