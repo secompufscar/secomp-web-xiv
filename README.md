@@ -31,7 +31,7 @@ Antes de mais nada, certifique-se de ter os seguintes programas instalados:
 Clone o repositório
 
 ```sh
-git clone https://github.com/secompufscar/secomp-web.git
+git clone https://github.com/secompufscar/secomp-web-xiv.git
 ```
 
 <br>
