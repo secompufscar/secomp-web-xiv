@@ -7,11 +7,11 @@ function CustomButton({ text, href, className }) {
     <a href={href} target="_blank">
       <p 
         className={`
-          min-w-[120px] py-6 px-12 text-secondary text-center border border-secondary rounded-full text-xl md:text-2xl uppercase 
-          ${robotoMono.className} transition-all duration-500 hover:bg-secondary hover:text-[#0A0A0A] ${className}
+          min-w-[120px] py-6 px-12 text-accentGreen text-center border border-accentGreen rounded-md text-xl md:text-2xl uppercase 
+          ${robotoMono.className} transition-all duration-300 hover:bg-accentGreen hover:text-black ${className}
         `}
       >
-        {text}
+        <span className="opacity-60">&gt;</span> {text}<span className="animate-pulse">_</span>
       </p>
     </a>
   )

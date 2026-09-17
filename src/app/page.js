@@ -7,6 +7,7 @@ import { content } from "@/data/content";
 import Lenis from "@studio-freight/lenis";
 import AnimatedContent from "@/components/animation/animatedContent";
 import TextType from "@/components/text/textType";
+import TypewriterText from "@/components/text/typewriterText";
 import SpotlightCard from "@/components/animation/spotlight";
 import NavBar from "../components/navbar"
 import Footer from "../components/footer"
@@ -15,12 +16,14 @@ import Patrocinadores from "../components/patrocinadores/page"
 import Countdown from '../components/countdown'
 import Downloads from "@/components/download";
 import CustomButton from "@/components/buttons/buttons";
+import TerminalLog from "@/components/terminal";
+import { eventStart, eventEnd } from "@/data/eventDate";
 import "./gradient.css"
 
 export default function Page() {
-  const [show, setShow] = useState(false);
-  const [mainText, setMainText] = useState("Vem aí a SECOMP UFSCAR 2025");
-  const words = ["SECOMP XIII", "•", "UFSCAR", "•"];
+  const [mainText, setMainText] = useState("COMPILANDO A");
+  const [heroStep, setHeroStep] = useState(0);
+  const words = ["SECOMP XIV", "•", "UFSCAR", "•"];
 
   useEffect(() => {
     const lenis = new Lenis({ lerp: 0.05, wheelMultiplier: 1.2 });
@@ -33,21 +36,14 @@ export default function Page() {
   }, []);
 
   useEffect(() => {
-    const timer = setTimeout(() => setShow(true), 5);
-    return () => clearTimeout(timer);
-  }, []);
+    const today = new Date();
 
-  useEffect(() => {
-    const hoje = new Date();
-    const inicioEvento = new Date("2025-09-29T12:00:00-03:00");
-    const fimEvento = new Date("2025-10-03T23:59:59-03:00");
-
-    if (hoje < inicioEvento) {
-      setMainText("Vem aí a SECOMP UFSCAR 2025");
-    } else if (hoje >= inicioEvento && hoje <= fimEvento) {
-      setMainText("Está no ar a SECOMP UFSCAR 2025");
+    if (today < eventStart) {
+      setMainText("COMPILANDO A");
+    } else if (today >= eventStart && today <= eventEnd) {
+      setMainText("ESTÁ NO AR A");
     } else {
-      setMainText("Preparando a SECOMP UFSCAR 2026");
+      setMainText("COMPILANDO A");
     }
   }, []);
 
@@ -55,25 +51,31 @@ export default function Page() {
     <>
       <NavBar />
 
-      <div className={`gradient flex justify-center items-start min-h-screen pt-[250px]`}>
-        <div className={`px-16 pt-28 max-w-[1200px] text-white flex flex-col text-[2rem] text-center justify-center items-center flex-1 flex-grow flex-shrink-4 ${oswald.className}`}>
-          <TextType
-            text={[mainText]}
-            typingSpeed={60}
-            pauseDuration={1500}
-            showCursor={true}
-            cursorCharacter="."
-            cursorBlinkDuration={0.8}
-            className="text-[#ededed] text-7xl/[1.5] sm:text-9xl/[1.5] xl:text-[9rem]/[1.5] mb-4 font-bold uppercase tracking-wide"
+      <div className={`gradient relative flex justify-center items-start min-h-screen pt-[250px] overflow-hidden`}>
+        <TerminalLog className="hidden md:block absolute top-28 left-8 lg:left-16 text-lg lg:text-2xl text-white/70 pointer-events-none select-none z-0" />
+
+        <div className={`relative z-10 px-16 pt-28 max-w-[1200px] text-white flex flex-col text-[2rem] text-center justify-center items-center flex-1 flex-grow flex-shrink-4 ${oswald.className}`}>
+          <TypewriterText
+            text={mainText}
+            startDelay={200}
+            onComplete={() => setHeroStep(1)}
+            className="block text-[#ededed] text-7xl/[1.5] sm:text-9xl/[1.5] xl:text-[9rem]/[1.5] mb-4 font-bold uppercase tracking-wide"
           />
 
-          {/* <h6 
-            className={`mt-16 md:mt-20 md:text-[48px] lg:text-8xl font-light px-16 py-12 border border-primary rounded-full leading-[1.5] transition-opacity duration-1000
-            ${robotoMono.className} 
-            ${show ? "opacity-100" : "opacity-0"}`}
-          >
-              ?/? até ?/?
-          </h6> */}
+          <div className="flex flex-col items-center justify-center">
+            <h2 className={`text-6xl sm:text-8xl xl:text-[8rem] font-bold uppercase tracking-wide text-[#ededed] mt-4 ${oswald.className}`}>
+              {heroStep >= 1 && (
+                <TypewriterText text="SECOMP" onComplete={() => setHeroStep(2)} />
+              )}
+            </h2>
+            <span 
+              className={`block text-6xl sm:text-8xl xl:text-[8rem] font-bold tracking-widest text-center uppercase my-2 text-primary drop-shadow-[0_0_15px_rgba(0,255,102,0.6)] ${oswald.className}`}
+            >
+              {heroStep >= 2 && (
+                <TypewriterText text={new Date() < eventEnd ? "XIV" :  `${new Date().getFullYear()+1}`} />
+              )}
+            </span>
+          </div>
 
           <Countdown />
         </div>
@@ -84,7 +86,7 @@ export default function Page() {
           <div className="w-full overflow-hidden text-white py-8 px-4">
             <div className={`flex whitespace-nowrap ${robotoMono.className}`}>
               {Array(30).fill(null).map((_, i) => (
-                <span key={i} className="px-4 text-2xl text-secondary">
+                <span key={i} className={`px-4 text-2xl ${i % 2 === 0 ? "text-accentGreen" : "text-secondary"}`}>
                   {words[i % words.length]}
                 </span>
               ))}
@@ -109,7 +111,7 @@ export default function Page() {
                 </AnimatedContent>
               </div>
 
-              <div className="flex-1">
+              <div className="flex-1 w-full">
                 <AnimatedContent
                   distance={70}
                   direction="vertical"
@@ -121,29 +123,53 @@ export default function Page() {
                   threshold={0.1}
                   delay={0.1}
                 >
-                  <div className={`flex flex-col justify-between text-gray text-[1.5rem] font-light leading-[1.8] tracking-wide sm8:text-justify ${robotoMono.className}`}>
-                    <TextType
-                      text={["O QUE É A SECOMP"]}
-                      typingSpeed={80}
-                      pauseDuration={1500}
-                      showCursor={true}
-                      cursorCharacter="?"
-                      startOnVisible={true}
-                      cursorBlinkDuration={0.8}
-                      className={`text-[#ededed] text-5xl md:text-7xl font-bold text-start leading-none mb-16 ${oswald.className}`}
+                  <div className="relative rounded-2xl border border-white/10 bg-[#121218] overflow-hidden shadow-2xl shadow-black/60">
+                    <div
+                      className="pointer-events-none absolute inset-0 opacity-[0.05]"
+                      style={{
+                        backgroundImage:
+                          "repeating-linear-gradient(45deg, #F2F0E8 0, #F2F0E8 1px, transparent 1px, transparent 14px), repeating-linear-gradient(-45deg, #F2F0E8 0, #F2F0E8 1px, transparent 1px, transparent 14px)",
+                      }}
                     />
 
-                    <p className="mb-8">
-                      A Semana Acadêmica da Computação da UFSCar (SECOMP) nasceu com o <b className="text-white">propósito de trazer temas relevantes para a comunidade acadêmica
-                        e para entusiastas da área</b>. Todos os anos, estudantes se mobilizam para realizar esse grande evento, que reúne convidados de diferentes
-                      áreas para compartilhar experiências, discutir novidades e promover inovação.
-                    </p>
+                    {/* barra de título estilo macOS */}
+                    <div className="relative flex items-center gap-2 px-5 py-4 border-b border-white/10 bg-white/[0.03]">
+                      <span className="w-3 h-3 rounded-full bg-[#FF0000]" />
+                      <span className="w-3 h-3 rounded-full bg-accentGreen" />
+                      <span className="w-3 h-3 rounded-full bg-secondary" />
+                      <span className={`ml-4 text-xs tracking-wide text-white/40 ${robotoMono.className}`}>
+                        secomp@ufscar: ~/sobre
+                      </span>
+                    </div>
 
-                    <p>
-                      A programação é diversa e feita para todos os gostos: <b className="text-white">palestras</b> e <b className="text-white"> minicursos </b>
-                      práticos para ampliar conhecimentos, <b className="text-white">competições</b> como Hackathon, Desafio de Programadores e CTF para testar habilidades,
-                      além da tradicional <b className="text-white">Gamenight</b> para relaxar e se divertir. Uma experiência completa, cheia de aprendizado, desafios e novas conexões!
-                    </p>
+                    <div className={`relative flex flex-col justify-between text-gray text-[1.4rem] font-light leading-[1.8] tracking-wide sm8:text-justify p-8 md:p-12 ${robotoMono.className}`}>
+                      <p className="mb-6 text-accentGreen text-base">
+                        <span className="opacity-70">$</span> cat sobre.txt
+                      </p>
+
+                      <TextType
+                        text={["O QUE É A SECOMP"]}
+                        typingSpeed={80}
+                        pauseDuration={1500}
+                        showCursor={true}
+                        cursorCharacter="?"
+                        startOnVisible={true}
+                        cursorBlinkDuration={0.8}
+                        className={`glitch-hover text-[#F2F0E8] text-4xl md:text-6xl font-bold text-start leading-none mb-12 ${oswald.className}`}
+                      />
+
+                      <p className="mb-8">
+                        A Semana Acadêmica da Computação da UFSCar (SECOMP) nasceu com o <b className="text-white">propósito de trazer temas relevantes para a comunidade acadêmica
+                          e para entusiastas da área</b>. Todos os anos, estudantes se mobilizam para realizar esse grande evento, que reúne convidados de diferentes
+                        áreas para compartilhar experiências, discutir novidades e promover inovação.
+                      </p>
+
+                      <p>
+                        A programação é diversa e feita para todos os gostos: <b className="text-white">palestras</b> e <b className="text-white"> minicursos </b>
+                        práticos para ampliar conhecimentos, <b className="text-white">competições</b> como Hackathon, Desafio de Programadores e CTF para testar habilidades,
+                        além da tradicional <b className="text-white">Gamenight</b> para relaxar e se divertir. Uma experiência completa, cheia de aprendizado, desafios e novas conexões!
+                      </p>
+                    </div>
                   </div>
                 </AnimatedContent>
               </div>
@@ -159,7 +185,7 @@ export default function Page() {
               cursorCharacter="."
               startOnVisible={true}
               cursorBlinkDuration={0.8}
-              className={`text-white text-5xl md:text-7xl font-bold text-start ${oswald.className}`}
+              className={`glitch-hover text-white text-5xl md:text-7xl font-bold text-start ${oswald.className}`}
             />
 
             <AnimatedContent
@@ -179,11 +205,12 @@ export default function Page() {
                     key={i}
                     className={`
                       group w-full aspect-square border border-[#F8F8F8]/10 rounded-2xl flex flex-col items-start justify-end p-[40px] sm9:p-8 
-                      text-white text-[1.5rem] font-medium ${inter.className} transition-all duration-300 hover:scale-105 hover:border-secondary/80
+                      text-white text-[1.5rem] font-medium ${inter.className} transition-all duration-300 hover:scale-105 
+                      ${i % 2 === 0 ? "hover:border-accentGreen/80" : "hover:border-secondary/80"}
                     `}
-                    spotlightColor="rgba(0, 170, 255, 0.3)"
+                    spotlightColor={i % 2 === 0 ? "rgba(0, 255, 102, 0.3)" : "rgba(20, 0, 255, 0.3)"}
                   >
-                    <div className="text-secondary">{item.icon}</div>
+                    <div className={i % 2 === 0 ? "text-accentGreen" : "text-secondary"}>{item.icon}</div>
                     <span className="mt-6">{item.label}</span>
 
                     <p
@@ -213,7 +240,7 @@ export default function Page() {
                 cursorCharacter="."
                 startOnVisible={true}
                 cursorBlinkDuration={0.8}
-                className={`text-white text-5xl md:text-7xl font-bold text-start ${oswald.className}`}
+                className={`glitch-hover text-[#F2F0E8] text-5xl md:text-7xl font-bold text-start ${oswald.className}`}
               />
 
               <CustomButton text="Começar parceria" href="mailto:coordenacao@secompufscar.com.br" />
@@ -233,7 +260,7 @@ export default function Page() {
               cursorCharacter="."
               startOnVisible={true}
               cursorBlinkDuration={0.8}
-              className={`text-white text-5xl md:text-7xl font-bold text-start ${oswald.className}`}
+              className={`glitch-hover text-white text-5xl md:text-7xl font-bold text-start ${oswald.className}`}
             />
 
             <FAQ faqData={faq} />

@@ -28,13 +28,15 @@ export default function MobileNav({ links }) {
             )}
 
             <header
-                className={`flex lg:hidden flex-col fixed z-50 w-full py-4 px-8
-                    ${mobileMenuOpen ? "bg-black" : "bg-black/10 backdrop-blur-md"}`}
+                className={`flex lg:hidden flex-col fixed z-50 w-full py-4 px-8 border-b
+                    ${mobileMenuOpen ? "bg-black border-accentGreen/20" : "bg-black/10 backdrop-blur-md border-transparent"}`}
             >
                 <div className="flex items-center w-full justify-between py-2">
                     <Link href={"#home"}>
                         <div className="w-full opacity-90">
-                            <h2 className={`text-white text-[16px] font-bold uppercase tracking-wider ${inter.className}`}>Secomp UFSCar</h2>
+                            <h2 className={`text-white text-[16px] font-bold uppercase tracking-wider ${inter.className}`}>
+                                Secomp UFSCar<span className="text-accentGreen animate-pulse">_</span>
+                            </h2>
                         </div>
                     </Link>
 
@@ -48,7 +50,6 @@ export default function MobileNav({ links }) {
                     </button>
                 </div>
 
-                {/* Links só aparecem quando showLinks = true */}
                 {mobileMenuOpen && (
                     <div
                         className={`flex flex-col items-start w-full gap-6 pb-8 mt-8 transition-opacity duration-300 ease-in-out
@@ -58,10 +59,10 @@ export default function MobileNav({ links }) {
                             <Link
                                 key={index}
                                 onClick={onClickMenu}
-                                className={`${robotoMono.className} w-full tracking-widest py-2 text-xl text-white uppercase`}
+                                className={`${robotoMono.className} w-full tracking-widest py-2 text-xl text-white uppercase hover:text-accentGreen transition-colors duration-300`}
                                 href={nav.href}
                             >
-                                {nav.name}
+                                <span className="text-secondary mr-2">&gt;</span>{nav.name}
                             </Link>
                         ))}
                     </div>
