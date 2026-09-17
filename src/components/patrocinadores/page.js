@@ -5,32 +5,36 @@ import AnimatedContent from "@/components/animation/animatedContent";
 
 const sponsors = [
     {
-        img: "/patrocinio/magalu-cloud.png",
-        alt: "Magalu Cloud"
+        img: "/patrocinio/giraffas.png",    // TODO: Colocar todos os PNGs 1024 x 1024 em patrocinio/
+        alt: "Giraffas"
     },
     {
-        img: "/patrocinio/alura.png",
-        alt: "Alura"
+        img: "/patrocinio/casa-do-codigo.png",
+        alt: "Casa do Código"
     },
     {
-        img: "/patrocinio/rocketseat.png",
-        alt: "Rocket Seat"
+        img: "/patrocinio/code-synergy.png",  
+        alt: "Code Synergy"
     },
     {
-        img: "/patrocinio/visagio.png",
-        alt: "Visagio"
+        img: "/patrocinio/onovolab.png",
+        alt: "Onovolab"
     },
     {
-        img: "/patrocinio/csdbr.png",
-        alt: "CSDBR"
+        img: "/patrocinio/draiven.png",
+        alt: "Draiven"
     },
     {
-        img: "/patrocinio/liven.png",
-        alt: "Liven"
+        img: "/patrocinio/parqtec.png",
+        alt: "ParqTec"
     },
     {
-        img: "/patrocinio/grupo-criar.png",
-        alt: "Grupo Criar"
+        img: "/patrocinio/vinteum.png",
+        alt: "Vinteum"
+    },
+    {
+        img: "/patrocinio/9kings.webp",
+        alt: "9kings"
     },
 ];
 
@@ -58,7 +62,7 @@ export default function Patrocinadores() {
                                 <img
                                     src={src.img}
                                     alt={src.alt}
-                                    className="w-full max-w-[120px] md:max-w-[150px] h-full object-contain"
+                                    className="w-full max-w-[120px] md:max-w-[140px] h-full object-contain"
                                 />
                             </div>
                         ))}

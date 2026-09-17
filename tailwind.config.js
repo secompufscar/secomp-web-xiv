@@ -13,13 +13,15 @@ module.exports = {
     colors: {
       current: "currentColor",
       transparent: "transparent",
-      textColor: "#F8F8F8",
+      textColor: "#F2F0E8",   // Amarelo Claro
       white: "#FFFFFF",
-      black: "#0a0a0a",
+      black: "#0B0B0F",       // Azul Acinzentado (fundo)
       gray: "#a0a0a0",
-      primary: "#FF202D",
-      secondary: "#FF0000",
-      vibrantBlue: "#FF0000",
+      primary: "#00FF66",     // Verde Vívido (accent principal)
+      secondary: "#1400FF",   // Azul Vívido
+      vibrantBlue: "#1400FF", // alias de secondary
+      accentGreen: "#00FF66", // alias de primary
+      accentPurple: "#0033CC",// realocado: azul profundo 
     },
     screens: {
       xsm: "425px",

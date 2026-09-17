@@ -37,7 +37,7 @@ function FAQComponent({ faqData }) {
           aria-expanded={isOpen}
           aria-controls={`faq-content-${index}`}
         >
-          <p className="text-2xl md:text-3xl text-white/50 font-bold mr-12 group-hover:text-white transition-all duration-500">
+          <p className={`text-2xl md:text-3xl text-accentGreen/60 font-bold mr-12 group-hover:text-accentGreen transition-all duration-500 ${robotoMono.className}`}>
             {(index + 1).toString().padStart(2, "0")}
           </p>
 
@@ -47,12 +47,12 @@ function FAQComponent({ faqData }) {
 
           <div className="absolute top-1/2 right-4 -translate-y-1/2 w-8 h-8 flex items-center justify-center">
             <Plus
-              className={`absolute w-full h-full text-white transition-opacity duration-300 ${
+              className={`absolute w-full h-full text-accentGreen transition-opacity duration-300 ${
                 isOpen ? "opacity-0" : "opacity-100"
               }`}
             />
             <Minus
-              className={`absolute w-full h-full text-white transition-opacity duration-300 ${
+              className={`absolute w-full h-full text-accentGreen transition-opacity duration-300 ${
                 isOpen ? "opacity-100" : "opacity-0"
               }`}
             />

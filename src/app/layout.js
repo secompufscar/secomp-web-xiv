@@ -122,7 +122,10 @@ export default function RootLayout({ children }) {
           />
         </head>
 
-          <body>{children}</body>
+          <body>
+            <div className="crt-overlay" aria-hidden="true" />
+            {children}
+          </body>
       </html>
   );
 }

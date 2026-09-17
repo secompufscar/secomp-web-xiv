@@ -66,7 +66,7 @@ export default function TerminalLog({ className = "" }) {
     <div className={`${robotoMono.className} leading-relaxed ${className}`}>
       {displayedLines.map((line, i) => (
         <div key={i} className="whitespace-pre">
-          <span className={i === 1 ? "text-[#FF202D]" : "opacity-80"}>
+          <span className={i === 1 ? "text-[#FF0000]" : "opacity-80"}>
             {`>${line}`}
           </span>
         </div>

@@ -55,18 +55,4 @@ export const weekData = [
       // },
     ],
   },
-  {
-    day: "Sexta-feira",
-    date: "09/09",
-    activities: [
-      // {
-      //   title: "Inteligência Artificial na Prática",
-      //   time: "09:00",
-      //   desc: "Demonstração ao vivo de casos de uso e novas tecnologias.",
-      //   speaker: "Thiago Otto",
-      //   location: "Departamento de Computação",
-      //   icon: "💻",
-      // },
-    ],
-  },
 ];
