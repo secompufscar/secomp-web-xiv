@@ -1,7 +1,7 @@
 export const weekData = [
   {
     day: "Segunda-feira",
-    date: "05/09",
+    date: "05/10",
     activities: [
       // {
       //   title: "Credenciamento",
@@ -15,7 +15,7 @@ export const weekData = [
   },
   {
     day: "Terça-feira",
-    date: "06/09",
+    date: "06/10",
     activities: [
       // {
       //   title: "Tecnologia centrada no humano para apoiar estudantes universitários com depressão: uma conversa sobre pesquisa multidisciplinar",
@@ -29,7 +29,7 @@ export const weekData = [
   },
   {
     day: "Quarta-feira",
-    date: "07/09",
+    date: "07/10",
     activities: [
       // {
       //   title: "Pesquisa: Padrões, aprendizado e inteligência artificial",
@@ -43,7 +43,7 @@ export const weekData = [
   },
   {
     day: "Quinta-feira",
-    date: "08/09",
+    date: "08/10",
     activities: [
       // {
       //   title: "Segurança Biométrica: Privacidade e Vigilância",
