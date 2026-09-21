@@ -17,8 +17,8 @@ function Downloads() {
         </div>
 
         <div className={`flex flex-row flex-wrap justify-center gap-8 text-2xl text-black`}>
-          <CustomButton text="Acessar na web" href="https://app.secompufscar.com.br/" />
-          <CustomButton text="Baixar apk" href="https://expo.dev/accounts/secomp_ti/projects/secomp/builds/88df7881-6015-4405-bb2f-ad991d0879de" />
+          {/* <CustomButton text="Acessar na web" href="(versão web pra IOS)" />   */}
+          <CustomButton text="Baixar apk" href="https://github.com/secompufscar/secomp-app-xiv/releases/download/v1.0.0/SECOMP.apk" />
         </div>
     </div>
   );

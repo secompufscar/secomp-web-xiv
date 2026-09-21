@@ -16,11 +16,12 @@ export default function NavBar({ sticky = false }) {
   const navLinks = [
     { name: "HOME", href: "/" },
     { name: "SOBRE", href: "/#sobre" },
+    { name: "QUEM SOMOS", href: "/quem-somos" },
     { name: "CONTEÚDO", href: "/#conteudo" },
     { name: "PROGRAMAÇÃO", href: "/cronograma" },
     { name: "PATROCÍNIO", href: "/#patrocinadores" },
     { name: "FAQ", href: "/#faq" },
-    // { name: "Download", href: "/#downloads" },
+    { name: "Download", href: "/#downloads" },
   ];
 
   return (
