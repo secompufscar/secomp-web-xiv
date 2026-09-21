@@ -52,7 +52,7 @@ export default function Page() {
       <NavBar />
 
       <div className={`gradient relative flex justify-center items-start min-h-screen pt-[250px] overflow-hidden`}>
-        <TerminalLog className="hidden md:block absolute top-28 left-8 lg:left-16 text-lg lg:text-2xl text-white/70 pointer-events-none select-none z-0" />
+        <TerminalLog className="hidden md:block absolute top-28 left-8 lg:left-16 text-lg lg:text-3xl text-white/70 pointer-events-none select-none z-0" />
 
         <div className={`relative z-10 px-16 pt-28 max-w-[1200px] text-white flex flex-col text-[2rem] text-center justify-center items-center flex-1 flex-grow flex-shrink-4 ${oswald.className}`}>
           <TypewriterText
@@ -266,7 +266,7 @@ export default function Page() {
             <FAQ faqData={faq} />
           </div>
 
-          {/* <div id="downloads" className="w-full mt-36 md:mt-56 px-8 sm8:px-16 lg:px-48">
+          <div id="downloads" className="w-full mt-36 md:mt-56 px-8 sm8:px-16 lg:px-48">
             <AnimatedContent
               distance={70}
               direction="vertical"
@@ -280,7 +280,7 @@ export default function Page() {
             >
               <Downloads /> 
             </AnimatedContent>
-          </div> */}
+          </div>
 
           <div id="contato" className="flex items-center justify-end py-24 w-full text-white mt-32 md:mt-64 px-8 sm:px-16 bg-[url('/estande-magalu.png')] bg-cover bg-center bg-no-repeat">
             <div className="max-w-[460px] w-full h-full bg-[#070707] p-[3.7rem] sm:p-20 rounded-xl">

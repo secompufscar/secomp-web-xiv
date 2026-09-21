@@ -5,7 +5,7 @@ import AnimatedContent from "@/components/animation/animatedContent";
 
 const sponsors = [
     {
-        img: "/patrocinio/giraffas.png",    // TODO: Colocar todos os PNGs 1024 x 1024 em patrocinio/
+        img: "/patrocinio/giraffas.png",    
         alt: "Giraffas"
     },
     {
@@ -35,6 +35,10 @@ const sponsors = [
     {
         img: "/patrocinio/9kings.webp",
         alt: "9kings"
+    },
+    {
+        img: "/patrocinio/suqueria.png",
+        alt: "La Suqueria"
     },
 ];
 
