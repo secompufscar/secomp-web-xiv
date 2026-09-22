@@ -78,7 +78,7 @@ export const weekData = [
       {
         title: "Camisetas",
         time: "19:00",
-        desc: "Retirada de camisetas do evento.",
+        desc: "Retirada de camisetas do evento",
         speaker: "Organização da Secomp",
         location: "Anfiteatro Bento Prado Júnior",
         icon: "👕",
@@ -164,7 +164,7 @@ export const weekData = [
       {
         title: "Camisetas",
         time: "20:30",
-        desc: "Retirada de camisetas do evento.",
+        desc: "Retirada de camisetas do evento",
         speaker: "Organização da Secomp",
         location: "ONOVOLAB",
         icon: "👕",
@@ -216,7 +216,7 @@ export const weekData = [
         icon: "☕",
       },
       {
-        title: "Chatbots de apoio à saúde mental, design de interfaces de usuário apoiado por IAGen",
+        title: "Chatbots de apoio à saúde mental, design de interfaces de usuário apoiado por IA generativa",
         time: "16:30",
         desc: "",
         speaker: "Vânia Paula de Almeida Neris",
@@ -226,7 +226,7 @@ export const weekData = [
       {
         title: "Camisetas",
         time: "17:30",
-        desc: "Retirada de camisetas do evento.",
+        desc: "Retirada de camisetas do evento",
         speaker: "Organização da Secomp",
         location: "ONOVOLAB",
         icon: "👕",
@@ -294,7 +294,7 @@ export const weekData = [
         icon: "☕",
       },
       {
-        title: "Cibersegurança, regulação das plataformas digitais",
+        title: "Cibersegurança e Controle: quem regula as tecnologias do futuro?",
         time: "16:00",
         desc: "",
         speaker: "Isabella Vicari",
@@ -318,7 +318,7 @@ export const weekData = [
         icon: "🎉",
       },
       {
-        title: "Lual DAComp",
+        title: "Luau DAComp",
         time: "19:00",
         desc: "",
         speaker: "Diretório Acadêmico da Computação",
