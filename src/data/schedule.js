@@ -246,18 +246,18 @@ export const weekData = [
     date: "08/10",
     activities: [
       {
-        title: "Agilidade e seus paradigmas, benefícios e dificuldades!",
+        title: "Desenvolvimento Java para Inteligência Artificial e Machine Learning",
         time: "09:00",
         desc: "",
-        speaker: "Ricardo Romancini",
+        speaker: "Carlos F. Gonçalves",
         location: "Anfiteatro Bento Prado Júnior",
         icon: "🎤",
       },
       {
-        title: "Desenvolvimento Java para Inteligência Artificial e Machine Learning",
+        title: "Agilidade e seus paradigmas, benefícios e dificuldades!",
         time: "10:00",
         desc: "",
-        speaker: "Carlos F. Gonçalves",
+        speaker: "Ricardo Romancini",
         location: "Anfiteatro Bento Prado Júnior",
         icon: "🎤",
       },
