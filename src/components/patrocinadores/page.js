@@ -13,8 +13,8 @@ const sponsors = [
         alt: "Casa do Código"
     },
     {
-        img: "/patrocinio/code-synergy.png",  
-        alt: "Code Synergy"
+        img: "/patrocinio/monks.png",
+        alt: "Monks"
     },
     {
         img: "/patrocinio/onovolab.png",
@@ -35,6 +35,10 @@ const sponsors = [
     {
         img: "/patrocinio/9kings.webp",
         alt: "9kings"
+    },
+    {
+        img: "/patrocinio/code-synergy.png",  
+        alt: "Code Synergy"
     },
     {
         img: "/patrocinio/suqueria.png",
