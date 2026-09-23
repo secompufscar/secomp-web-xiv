@@ -17,7 +17,7 @@ function Downloads() {
         </div>
 
         <div className={`flex flex-row flex-wrap justify-center gap-8 text-2xl text-black`}>
-          {/* <CustomButton text="Acessar na web" href="(versão web pra IOS)" />   */}
+          <CustomButton text="Acessar na web (recomendado para IOS)" href="https://secomp-app-xiv.vercel.app/" />  
           <CustomButton text="Baixar apk" href="https://github.com/secompufscar/secomp-app-xiv/releases/download/v1.0.0/SECOMP.apk" />
         </div>
     </div>
