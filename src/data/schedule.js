@@ -231,14 +231,14 @@ export const weekData = [
         location: "ONOVOLAB",
         icon: "👕",
       },
-      // {
-      //   title: "Maratona M@U",
-      //   time: "19:00",
-      //   desc: "",
-      //   speaker: "Organização da Secomp",
-      //   location: "Departamento de Computação da UFSCar",
-      //   icon: "🏁",
-      // },
+      {
+        title: "Maratona M@U",
+        time: "19:00",
+        desc: "",
+        speaker: "Organização da Secomp",
+        location: "Departamento de Computação da UFSCar",
+        icon: "🏁",
+      },
     ],
   },
   {
