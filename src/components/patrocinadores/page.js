@@ -33,16 +33,24 @@ const sponsors = [
         alt: "Vinteum"
     },
     {
-        img: "/patrocinio/9kings.webp",
-        alt: "9kings"
+        img: "/patrocinio/instituto-onovolab.png",
+        alt: "Instituto Onovolab"
     },
     {
         img: "/patrocinio/code-synergy.png",  
         alt: "Code Synergy"
     },
     {
-        img: "/patrocinio/instituto-onovolab.png",
-        alt: "Instituto Onovolab"
+        img: "/patrocinio/9kings.webp",
+        alt: "9kings"
+    },
+    {
+        img: "/patrocinio/finops.svg",
+        alt: "Finops"
+    },
+    {
+        img: "/patrocinio/jau.webp",
+        alt: "Jaú Serve"
     },
     {
         img: "/patrocinio/suqueria.png",
