@@ -41,6 +41,10 @@ const sponsors = [
         alt: "Code Synergy"
     },
     {
+        img: "/patrocinio/instituto-onovolab.png",
+        alt: "Instituto Onovolab"
+    },
+    {
         img: "/patrocinio/suqueria.png",
         alt: "La Suqueria"
     },
