@@ -77,7 +77,7 @@ export const team = [
   {
     name: "Carolina Carneiro de Andrade Lima",
     department: "patrocinio",
-    photo: "/equipe/avatar-placeholder.svg",
+    photo: "/equipe/carol.jpeg",
   },
   {
     name: "Vinícius Yuya Massuda",
