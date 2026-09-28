@@ -12,12 +12,10 @@ export default function EquipeSection({ departments, team }) {
 
                 if (members.length === 0) return null;
 
-                const isGreen = deptIndex % 2 === 0;
-
                 return (
                     <div key={dept.key}>
                         <div className="flex items-center gap-4 mb-10">
-                            <span className={`text-lg ${robotoMono.className} ${isGreen ? "text-accentGreen" : "text-[#2C19FF]"}`}>
+                            <span className={`text-lg ${robotoMono.className} text-accentGreen`}>
                                 <span className="opacity-70">#</span> {String(deptIndex + 1).padStart(2, "0")}
                             </span>
 
@@ -46,7 +44,7 @@ export default function EquipeSection({ departments, team }) {
                                         name={member.name}
                                         departmentLabel={dept.label}
                                         photo={member.photo}
-                                        accent={isGreen ? "green" : "blue"}
+                                        accent={"green"}
                                     />
                                 ))}
                             </div>

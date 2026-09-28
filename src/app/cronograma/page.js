@@ -44,13 +44,13 @@ export default function App() {
 
                         <div className={`w-full sm9:w-fit flex flex-row ${pageIndex === 0 ? "justify-end" : "justify-between"} gap-6 mt-12 sm9:mt-0 ${robotoMono.className}`}>
                             {pageIndex !== 0 &&
-                                <button onClick={handlePrev} className="flex items-center justify-center py-3 px-6 text-secondary/80 text-lg border border-secondary/80 rounded-md uppercase tracking-wider hover:border-accentGreen hover:text-accentGreen transition-colors duration-300">
+                                <button onClick={handlePrev} className="flex items-center justify-center py-3 px-6 text-accentGreen/80 text-lg border border-accentGreen/80 rounded-md uppercase tracking-wider hover:border-accentGreen hover:text-accentGreen transition-colors duration-300">
                                     <span className="text-white/30 mr-1">[</span>Anterior<span className="text-white/30 ml-1">]</span>
                                 </button>
                             }
 
                             {pageIndex !== 3 &&
-                                <button onClick={handleNext} className="flex items-center justify-center py-3 px-6 text-secondary/80 text-lg border border-secondary/80 rounded-md uppercase tracking-wider hover:border-accentGreen hover:text-accentGreen transition-colors duration-300" >
+                                <button onClick={handleNext} className="flex items-center justify-center py-3 px-6 text-accentGreen/80 text-lg border border-accentGreen/80 rounded-md uppercase tracking-wider hover:border-accentGreen hover:text-accentGreen transition-colors duration-300" >
                                     <span className="text-white/30 mr-1">[</span>Próximo<span className="text-white/30 ml-1">]</span>
                                 </button>
                             }
@@ -73,8 +73,8 @@ export default function App() {
                                     >
                                         <SpotlightCard
                                             key={index}
-                                            className={`group w-full border border-[#F8F8F8]/10 rounded-2xl flex flex-col sm8:flex-row items-start justify-start p-10 text-white text-2xl transition-transform duration-300 hover:scale-[1.01] ${index % 2 === 0 ? "hover:border-accentGreen/80" : "hover:border-secondary/80"}`}
-                                            spotlightColor={index % 2 === 0 ? "rgba(0, 255, 102, 0.3)" : "rgba(20, 0, 255, 0.3)"}
+                                            className={`group w-full border border-[#F8F8F8]/10 rounded-2xl flex flex-col sm8:flex-row items-start justify-start p-10 text-white text-2xl transition-transform duration-300 hover:scale-[1.01] hover:border-accentGreen/80`}
+                                            spotlightColor={"rgba(0, 255, 102, 0.3)"}
                                         >
                                             <div className="flex flex-row items-center justify-start pb-8 mb-8 border-b border-[#F8F8F8]/10 self-stretch sm8:flex-col sm8:pr-10 sm8:pb-0 sm8:mr-8 sm8:mb-0 sm8:border-r sm8:border-b-0">
                                                 <p className="text-center text-3xl p-8 border border-[#F8F8F8]/20 rounded-full bg-[#F8F8F8]/5">
@@ -87,13 +87,13 @@ export default function App() {
                                             </div>
 
                                             <div className="flex flex-col items-start justify-start">
-                                                <p className={`${index % 2 === 0 ? "text-accentGreen" : "text-secondary"} text-xl font-light leading-[1.8] ${inter.className}`}>
+                                                <p className={`${"text-accentGreen"} text-xl font-light leading-[1.8] ${inter.className}`}>
                                                     {act.speaker}
                                                 </p>
 
                                                 <span className={`text-white text-2xl mt-8 ${robotoMono.className}`}>{act.title}</span>
 
-                                                <p className={`text-[#F8F8F8] text-2xl font-light leading-[1.8] ${inter.className} mt-4`}>
+                                                <p className={`text-[#F8F8F8] text-2xl font-light leading-[1.8] whitespace-pre-line ${inter.className} mt-4`}>
                                                     {act.desc}
                                                 </p>
 
@@ -128,7 +128,7 @@ export default function App() {
                                 <button
                                     key={i}
                                     onClick={() => setPageIndex(i)}
-                                    className={`w-3 h-3 rounded-full transition-colors duration-300 ${i === pageIndex ? "bg-accentGreen" : "bg-white/30"}`}
+                                    className={`w-3 h-3 rounded-full transition-colors duration-300 bg-accentGreen`}
                                 />
                             ))}
                         </div>
