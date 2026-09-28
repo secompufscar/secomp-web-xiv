@@ -114,7 +114,7 @@ export const weekData = [
       //   icon: "📚",
       // },
       {
-        title: "Minicurso: Desenvolvimento de software baseado em SDD (Spec-Driven Development) com apoio do Github Spec Kit",
+        title: "Minicurso: Desenvolvimento de Software com SDD - Usando Spec Kit e Aplicando Arquitetura com Harness na Prática",
         time: "13:00",
         desc: "Em tempos de Inteligência Artificial Generativa, a forma de desenvolver software está passando por uma transformação significativa. O Spec-Driven Development (SDD) é uma abordagem estruturada para orientar o desenvolvimento a partir de especificações claras, reduzindo ambiguidades e tornando o uso de agentes de IA mais previsível e controlável.\nNeste minicurso, vamos explorar como aplicar o SDD na prática utilizando o GitHub Spec Kit, percorrendo as principais etapas do processo, desde a definição da especificação até a implementação da solução.\nAlém do processo e da ferramenta, veremos como aplicar uma Arquitetura com Harness para estabelecer e validar princípios, padrões e restrições arquiteturais ao longo do desenvolvimento, ajudando a garantir que o código produzido com apoio de IA permaneça alinhado à arquitetura definida.\nA proposta é apresentar uma visão prática de como combinar SDD + Spec Kit + Architecture Harness para tornar o desenvolvimento de software assistido por IA mais estruturado, consistente e orientado à arquitetura.",
         speaker: "Rogerio Gentil",
