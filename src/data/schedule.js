@@ -105,14 +105,14 @@ export const weekData = [
       //   location: "Departamento de Computação da UFSCar",
       //   icon: "🏪",
       // },
-      // {
-      //   title: "Minicurso: Arquitetura de soluções e produtos, Engenharia de prompts e contextos",
-      //   time: "13:00",
-      //   desc: "",
-      //   speaker: "Bruno Brito",
-      //   location: "A definir",
-      //   icon: "📚",
-      // },
+      {
+        title: "Minicurso: Arquitetura de soluções e produtos, Engenharia de prompts e contextos",
+        time: "13:00",
+        desc: "",
+        speaker: "Bruno Brito",
+        location: "Departamento de Computação da UFSCar",
+        icon: "📚",
+      },
       {
         title: "Minicurso: Desenvolvimento de Software com SDD - Usando Spec Kit e Aplicando Arquitetura com Harness na Prática",
         time: "13:00",
