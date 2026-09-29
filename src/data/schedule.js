@@ -110,7 +110,7 @@ export const weekData = [
         time: "13:00",
         desc: "",
         speaker: "Bruno Brito",
-        location: "A definir",
+        location: "Departamento de Computação da UFSCar",
         icon: "📚",
       },
       {
