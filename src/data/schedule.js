@@ -22,7 +22,7 @@ export const weekData = [
       {
         title: "Empreendedorismo e Soberania",
         time: "11:00",
-        desc: "",
+        desc: "A importância das universidades na geração de startups para modernização da economia e garantia da soberania",
         speaker: "Prof. Sylvio Rosa",
         location: "Anfiteatro Bento Prado Júnior",
         icon: "🎤",
@@ -30,8 +30,8 @@ export const weekData = [
       {
         title: "Segurança da Informação e Inteligência Artificial",
         time: "13:30",
-        desc: "",
-        speaker: "Alessandra O.",
+        desc: "O que é hackear o sistema?",
+        speaker: "Alessandra O. Jesus",
         location: "Anfiteatro Bento Prado Júnior",
         icon: "🎤",
       },
@@ -62,7 +62,7 @@ export const weekData = [
       {
         title: "Engenharia de Dados na Era da IA Generativa: Desafios e Tendências",
         time: "17:00",
-        desc: "",
+        desc: " A ascensão dos LLMs e da IA generativa transformou o papel do engenheiro de dados. Além de pipelines tradicionais e Data Lakes, agora lidamos com bancos de dados vetoriais, embeddings e fluxos em tempo real. Esta palestra abordará os novos desafios arquiteturais para sustentar sistemas inteligentes modernos, conectando a infraestrutura de dados diretamente ao ciclo de vida dos modelos de Machine Learning.",
         speaker: "Cezar Godinho",
         location: "Anfiteatro Bento Prado Júnior",
         icon: "🎤",
@@ -70,7 +70,7 @@ export const weekData = [
       {
         title: "IA não vai substituir você",
         time: "18:00",
-        desc: "",
+        desc: "A inteligência artificial já está mudando a forma como desenvolvemos software, resolvemos problemas e construímos produtos. Nesta palestra, vamos discutir por que o diferencial do profissional de tecnologia deixa de estar apenas em escrever código e passa cada vez mais por saber pensar, arquitetar, validar e usar a IA como ferramenta de amplificação. Mais do que perguntar se a IA vai substituir profissionais, a provocação é outra: \“o que significa ser realmente bom em tecnologia em um mundo onde a IA também programa?\”",
         speaker: "Jean Pires",
         location: "Anfiteatro Bento Prado Júnior",
         icon: "🎤",
@@ -121,18 +121,18 @@ export const weekData = [
         location: "Departamento de Computação da UFSCar",
         icon: "📚",
       },
-      // {
-      //   title: "Minicurso (Vinteum)",
-      //   time: "13:00",
-      //   desc: "A definir",
-      //   speaker: "Vinteum",
-      //   location: "A definir",
-      //   icon: "📚",
-      // },
+      {
+        title: "Minicurso: Running Bitcoin",
+        time: "13:00",
+        desc: "Este workshop convida os participantes a vivenciarem o Bitcoin de forma prática e direta. O encontro propõe que cada estudante configure e rode seu próprio nó Bitcoin em uma rede de testes (signet), sincronize com um nó minerador do instrutor e realize transações utilizando as ferramentas de linha de comando do Bitcoin Core. A proposta é oferecer uma introdução técnica ao protocolo do Bitcoin por dentro, explorando seus principais conceitos por meio da interação com a rede e com a estrutura interna de blocos e transações.",
+        speaker: "Vinteum",
+        location: "Departamento de Computação da UFSCar",
+        icon: "📚",
+      },
       {
         title: "Computação Quântica por Ressonância Magnética Nuclear",
         time: "17:00",
-        desc: "",
+        desc: "A Ressonância Magnética Nuclear (RMN) foi uma das primeiras ferramentas utilizadas para demonstrar os passos iniciais da Computação Quântica no início do século XXI. A partir de 2002, o Grupo de Pesquisa em RMN do Instituto de Física de São Carlos (USP) passou a atuar nessa área, acompanhando e contribuindo para os avanços pioneiros. O grupo contribuiu ao estabelecer a base computacional, conceber portas lógicas universais, gerar estados superpostos e emaranhados, criar métodos de tomografia quântica, implementar algoritmos básicos e desenvolver instrumentação. A apresentação destacará algumas dessas contribuições, voltadas a um público com menor familiaridade em RMN e Computação Quântica.",
         speaker: "Tito Jose Bonagamba",
         location: "ONOVOLAB",
         icon: "🎤",
@@ -170,7 +170,7 @@ export const weekData = [
       {
         title: "Estatística e Ciência de Dados na Computação",
         time: "10:00",
-        desc: "",
+        desc: "A Estatística tem papel fundamental na Ciência de Dados e na Inteligência Artificial, especialmente na compreensão da variabilidade, da incerteza e da capacidade de generalização dos modelos. Nesta palestra, discutiremos como conceitos estatísticos aparecem em diferentes etapas da análise de dados, desde a formulação do problema e a representação dos dados até o treinamento, a avaliação e a interpretação de modelos. Por meio de exemplos de aprendizado de máquina, redes neurais e aplicações reais, a palestra busca mostrar por que o pensamento estatístico continua essencial mesmo diante dos avanços recentes da Inteligência Artificial.",
         speaker: "Cibele Maria Russo",
         location: "Anfiteatro Bento Prado Júnior",
         icon: "🎤",
@@ -178,7 +178,7 @@ export const weekData = [
       {
         title: "Mesa Redonda: Docência em Computação",
         time: "11:00",
-        desc: "Mesa redonda com Vinicius, Regiane, Celia, Janaína e Rafael",
+        desc: "A mesa redonda \"Da Sala de Aula à Comunidade: Desafios e Práticas da Curricularização da Extensão na Docência Universitária\" promoverá um debate estratégico sobre a implementação da extensão na graduação e seus impactos no fazer pedagógico. O encontro buscará ir além do cumprimento normativo, discutindo caminhos práticos para conectar o ensino superior às demandas sociais reais.",
         speaker: "Vinicius Micali, Regiane Travensolo, Celia Kawabata, Janaína Goulart e Rafael Brito",
         location: "Anfiteatro Bento Prado Júnior",
         icon: "🗣️",
@@ -186,7 +186,7 @@ export const weekData = [
       {
         title: "Mesa Redonda: Empreendedorismo & Tecnologia - Transformando ideias em negócios",
         time: "14:00",
-        desc: "",
+        desc: "Você já teve uma ideia e não soube por onde começar? Nesta palestra, os estudantes são convidados a olhar para o próprio potencial empreendedor. A partir de pesquisa de mestrado sobre o papel das universidades na formação de novas empresas, são apresentados exemplos reais de como projetos acadêmicos e ideias de estudantes se tornaram negócios de sucesso — e caminhos práticos para quem quer dar o primeiro passo, unindo tecnologia, conhecimento técnico e visão empreendedora. O conteúdo pode ser conduzido em formato de palestra ou em formato de painel, com a participação de Pedro Apolloni (fundador da Gingalabs), Prof Roberto Ferrari Jr e Prof Rafael Aroca, compartilhando suas próprias trajetórias e discutindo sobre o papel das empresas filhas no ecossistema e no desenvolvimento regional.",
         speaker: "Fernando Guerreiro, Pedro Apolloni, Aroca e Ferrari",
         location: "ONOVOLAB",
         icon: "🎤",
@@ -194,7 +194,7 @@ export const weekData = [
       {
         title: "Acessibilidade em ambientes digitais inclusivos",
         time: "15:00",
-        desc: "",
+        desc: "A palestra apresentará os fundamentos da acessibilidade digital e sua importância na construção de ambientes tecnológicos inclusivos. Serão discutidas boas práticas, desafios e soluções para o desenvolvimento de sistemas e conteúdos acessíveis, destacando o papel da tecnologia na promoção da inclusão, da autonomia e da participação de todos os usuários.",
         speaker: "Janaína Dias Goulart",
         location: "ONOVOLAB",
         icon: "🎤",
@@ -210,7 +210,7 @@ export const weekData = [
       {
         title: "Chatbots de apoio à saúde mental, design de interfaces de usuário apoiado por IA generativa",
         time: "16:30",
-        desc: "",
+        desc: "O que deve ter em um bot que saiba conversar sobre saúde mental? Perspectivas da Computação Centrada no Humano. Nesta palestra abordaremos demandas e oportunidades para o desenvolvimento de agentes conversacionais em um cenário crítico como o de saúde mental.",
         speaker: "Vânia Paula de Almeida Neris",
         location: "ONOVOLAB",
         icon: "🎤",
@@ -240,7 +240,7 @@ export const weekData = [
       {
         title: "Desenvolvimento Java para Inteligência Artificial e Machine Learning",
         time: "09:00",
-        desc: "",
+        desc: "O desenvolvedor Java pode treinar, executar e integrar modelos de IA diretamente em aplicações Java, sem que seja necessário escrever a aplicação principal em Python. Veremos exemplos de aplicações.",
         speaker: "Carlos F. Gonçalves",
         location: "Anfiteatro Bento Prado Júnior",
         icon: "🎤",
@@ -248,7 +248,7 @@ export const weekData = [
       {
         title: "Agilidade e seus paradigmas, benefícios e dificuldades!",
         time: "10:00",
-        desc: "",
+        desc: "Como a agilidade pode transformar seu dia a dia na tecnologia, paradigmas criados, os benefícios que ela traz e o poder de transformar o dia a dia de uma organização e as dificuldades de derrubar culturas e mentalidades existentes contra ela.",
         speaker: "Ricardo Romancini",
         location: "Anfiteatro Bento Prado Júnior",
         icon: "🎤",
@@ -256,7 +256,7 @@ export const weekData = [
       {
         title: "Comunidade e networking: alavancando sua carreira durante a graduação",
         time: "11:00",
-        desc: "",
+        desc: "Nessa palestra irei apresentar um panorama da comunidade Python nacional e internacional e mostrar como participar de comunidades de tecnologia ainda durante a graduação pode ser o pontapé ideal para alavancar sua carreira profissional.",
         speaker: "Juliana K. de Sousa",
         location: "Anfiteatro Bento Prado Júnior",
         icon: "🎤",
@@ -264,7 +264,7 @@ export const weekData = [
       {
         title: "Desenvolvimento de jogos e apps independentes",
         time: "13:30",
-        desc: "",
+        desc: "Dos primeiros protótipos à publicação nas maiores plataformas: uma visão prática e real sobre a criação de jogos e aplicativos independentes. A palestra reúne experiências, erros, acertos e desafios vividos durante o desenvolvimento, lançamento e divulgação de projetos digitais para Steam, App Store e Google Play. O conteúdo também traz aprendizados e histórias apresentados anteriormente na TDC e SCEXP, incluindo os bastidores da trajetória de projetos como 9 Kings e de diversos aplicativos publicados internacionalmente. Uma conversa sobre programação, criatividade, produto, marketing e tudo aquilo que acontece entre ter uma ideia e finalmente colocá-la nas mãos dos jogadores e usuários.",
         speaker: "Yuri C Casadei",
         location: "Anfiteatro Bento Prado Júnior",
         icon: "🎤",
@@ -272,7 +272,7 @@ export const weekData = [
       {
         title: "Interfaces Líquidas: E se os contratos de integração fossem negociados por agentes em runtime?",
         time: "14:30",
-        desc: "",
+        desc: "Toda integração que a gente escreve hoje tem o contrato definido antes de rodar — OpenAPI, gRPC, MCP — e isso funciona enquanto os dois lados são conhecidos de antemão. Sistemas agênticos quebram essa premissa: um agente precisa de algo e não sabe quem faz, descobre candidatos em runtime, negocia, delega, e quando a tarefa termina aquela composição deixa de existir. O Liquid Interfaces Protocol (LIP) é uma especificação aberta para esse ciclo, em dez performativas que vão de register a dissolve, cobrindo registro semântico, intenção em linguagem natural, descoberta, negociação, execução e validação do artefato contra o schema que o próprio agente prometeu.",
         speaker: "Dhiogo Corrêa",
         location: "Anfiteatro Bento Prado Júnior",
         icon: "🎤",
@@ -288,7 +288,7 @@ export const weekData = [
       {
         title: "Cibersegurança e Controle: quem regula as tecnologias do futuro?",
         time: "16:00",
-        desc: "",
+        desc: "Discussão interdisciplinar entre ciência política e ciência da computação sobre os riscos e desafios regulatórios de tecnologias emergentes. A comunicação aborda escolhas de engenharia e design de produto com os limites do atual modelo brasileiro de regulação e responsabilização de plataformas digitais.",
         speaker: "Isabella Vicari",
         location: "Anfiteatro Bento Prado Júnior",
         icon: "🎤",
@@ -296,7 +296,7 @@ export const weekData = [
       {
         title: "Determinismo vs probabilística. Coding agents com Java",
         time: "17:00",
-        desc: "",
+        desc: "Nesta palestra vamos contrastar o determinismo no desenvolvimento de software com a nova tendência de desenvolvimento baseado em agentes de IA. Especificamente como mediante bibliotecas \"velhas\" e fundamentos DevSecOps podemos ajudar na criação de guardrails mais efetivos para o desenvolvimento de aplicativos empresariais com Java, incluindo\n\n- Bibliotecas de análise estática de código (SpotBugs, Checkstyle, ArchUnit, SonarQube)\n- Eclipse LSP, JetBrains LSP\n\nElevator pitch: Combinar as ferramentas clássicas com onboarding de projectos mais inteligentes, ajuda os agentes a convergir em resultados mais efetivos de forma simples e com menos tokens, consequentemente mais barato.",
         speaker: "Víctor Orozco",
         location: "Anfiteatro Bento Prado Júnior",
         icon: "🎤",
