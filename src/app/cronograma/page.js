@@ -87,7 +87,7 @@ export default function App() {
                                             </div>
 
                                             <div className="flex flex-col items-start justify-start">
-                                                <p className={`${"text-accentGreen"} text-xl font-light leading-[1.8] ${inter.className}`}>
+                                                <p className={`${"text-accentGreen"} text-2xl font-light leading-[1.8] ${inter.className}`}>
                                                     {act.speaker}
                                                 </p>
 
