@@ -167,7 +167,7 @@ export default function Page() {
                       <p>
                         A programação é diversa e feita para todos os gostos: <b className="text-white">palestras</b> e <b className="text-white"> minicursos </b>
                         práticos para ampliar conhecimentos, <b className="text-white">competições</b> como Hackathon, Desafio de Programadores e CTF para testar habilidades,
-                        além do novo <b className="text-white">Lual do Diretório Acadêmico da Coumputação</b> para relaxar e se divertir. Uma experiência completa, cheia de aprendizado, desafios e novas conexões!
+                        além do novo <b className="text-white">Luau do Diretório Acadêmico da Coumputação</b> para relaxar e se divertir. Uma experiência completa, cheia de aprendizado, desafios e novas conexões!
                       </p>
                     </div>
                   </div>
