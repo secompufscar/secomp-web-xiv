@@ -92,10 +92,15 @@ export const weekData = [
       {
         title: "Feira da Comp",
         time: "09:00",
-        desc: "",
+        desc: "A Feira da Comp reúne empresas, projetos e grupos da computação, e conta com palestras ao longo da programação.",
         speaker: "Organização da Secomp",
-        location: "A definir",
+        location: "Bliblioteca Cominutária UFSCar",
         icon: "🏪",
+        special: true,
+        subActivities: [
+          { title: "Palestra: Como se constrói software sem dono? A história do desenvolvimento do Bitcoin", time: "9:40", speaker: "Bruno Garcia (Vinteum)", desc: "" },
+          { title: "Palestra: Mutações silenciosas: o que a genética me ensinou sobre dados que quebram sem avisar", time: "11:00", speaker: "Edoardo Lobl (Monks)", desc: "" },
+        ],
       },
       {
         title: "Minicurso: Arquitetura de soluções e produtos, Engenharia de prompts e contextos",

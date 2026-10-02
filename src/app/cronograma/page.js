@@ -7,6 +7,7 @@ import { weekData } from "@/data/schedule";
 import NavBar from "@/components/navbar";
 import Footer from "@/components/footer";
 import SpotlightCard from "@/components/animation/spotlight";
+import FeiraCard from "@/components/feira/FeiraCard";
 
 export default function App() {
     const [pageIndex, setPageIndex] = useState(0);
@@ -71,6 +72,9 @@ export default function App() {
                                         onAnimationStart={() => setIsAnimating(true)}
                                         onAnimationComplete={() => setIsAnimating(false)}
                                     >
+                                        {act.special ? (
+                                            <FeiraCard act={act} />
+                                        ) : (
                                         <SpotlightCard
                                             key={index}
                                             className={`group w-full border border-[#F8F8F8]/10 rounded-2xl flex flex-col sm8:flex-row items-start justify-start p-10 text-white text-2xl transition-transform duration-300 hover:scale-[1.01] hover:border-accentGreen/80`}
@@ -102,6 +106,7 @@ export default function App() {
                                                 </p>
                                             </div>
                                         </SpotlightCard>
+                                        )}
                                     </motion.div>
                                 ))}
                             </AnimatePresence>
