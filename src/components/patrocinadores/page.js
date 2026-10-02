@@ -56,6 +56,10 @@ const sponsors = [
         img: "/patrocinio/suqueria.png",
         alt: "La Suqueria"
     },
+    {
+        img: "/patrocinio/pierogi.png",
+        alt: "Pierogi AI"
+    },
 ];
 
 export default function Patrocinadores() {
