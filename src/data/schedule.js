@@ -122,7 +122,7 @@ export const weekData = [
         title: "Minicurso: Cibersegurança",
         time: "13:00",
         desc: "Introdução a Cibersegurança e resolução de desafios de CTF.",
-        speaker: "Rafaela Silva Ruis (PET)",
+        speaker: "PET-BCC",
         location: "Departamento de Computação da UFSCar",
         icon: "📚",
       },
