@@ -54,7 +54,7 @@ export const weekData = [
       {
         title: "Guerra de Chips: Arquiteturas Open-Source e o Futuro da Tecnologia Brasileira",
         time: "16:00",
-        desc: "",
+        desc: "Tecnologias e padrões abertos, como Linux e Android, foram fundamentais para algumas das grandes revoluções da computação. A indústria de semicondutores, porém, historicamente apresenta fortes barreiras de entrada, envolvendo propriedade intelectual, ferramentas, fabricação e grandes investimentos. Em um cenário de crescente disputa geopolítica por tecnologias estratégicas — a chamada “Chip War” — os chips tornaram-se elementos centrais da economia e da soberania tecnológica. Nesse contexto, vivemos um movimento de abertura do hardware, impulsionado não apenas pela arquitetura RISC-V, mas também pelo crescimento de ferramentas e designs open source para chips. A palestra discutirá como esse novo ecossistema pode transformar o desenvolvimento de hardware e criar oportunidades para universidades, empresas, novos profissionais e países como o Brasil participarem da economia global de semicondutores.",
         speaker: "Rafael Aroca",
         location: "Anfiteatro Bento Prado Júnior",
         icon: "🎤",
@@ -121,7 +121,7 @@ export const weekData = [
       {
         title: "Minicurso: Cibersegurança",
         time: "13:00",
-        desc: "Introdução a Cibersegurança e resolução de desafios de CTF.",
+        desc: "Introdução à Cibersegurança e resolução de desafios de CTF.",
         speaker: "PET-BCC",
         location: "Departamento de Computação da UFSCar",
         icon: "📚",
