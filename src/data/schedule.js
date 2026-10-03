@@ -94,7 +94,7 @@ export const weekData = [
         time: "09:00",
         desc: "A Feira da Comp reúne empresas, projetos e grupos da computação, e conta com palestras ao longo da programação.",
         speaker: "Organização da Secomp",
-        location: "Bliblioteca Comunitária UFSCar",
+        location: "Biblioteca Comunitária UFSCar",
         icon: "🏪",
         special: true,
         subActivities: [
