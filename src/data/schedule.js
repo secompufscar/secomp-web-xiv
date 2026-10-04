@@ -98,9 +98,17 @@ export const weekData = [
         icon: "🏪",
         special: true,
         subActivities: [
-          { title: "Palestra: Como se constrói software sem dono? A história do desenvolvimento do Bitcoin", time: "9:40", speaker: "Bruno Garcia (Vinteum)", desc: "" },
-          { title: "Palestra: Mutações silenciosas: o que a genética me ensinou sobre dados que quebram sem avisar", time: "11:00", speaker: "Edoardo Lobl (Monks)", desc: "" },
+          { title: "Palestra: Como se constrói software sem dono? A história do desenvolvimento do Bitcoin", time: "9:40", speaker: "Bruno Garcia (Vinteum)", desc: "Nesta palestra, vamos percorrer a evolução do desenvolvimento do Bitcoin, desde o código original de Satoshi Nakamoto até o Bitcoin Core atual, passando por bugs históricos, vulnerabilidades críticas e pela evolução das práticas de engenharia, testes, revisão e segurança que sustentam um dos maiores projetos open source do mundo." },
+          { title: "Palestra: Mutações silenciosas: o que a genética me ensinou sobre dados que quebram sem avisar", time: "11:00", speaker: "Edoardo Lobl (Monks)", desc: "Edoardo Lobl é biólogo, mestre em Genética e Biologia Evolutiva pela UNESP e Technology Specialist na Monks. Começou programando em Perl para analisar dados genômicos e, em paralelo, construiu uma trajetória como educador, tradutor técnico e divulgador científico. Na Monks, atua em Data Analytics, no time de web tracking que atende a Natura, e lidera iniciativas de IA na área Tech. Das dores do dia a dia com tracking nasceram ferramentas como o Sentinel, voltadas à auditoria e à qualidade de dados." },
         ],
+      },
+      {
+        title: "Workshop: A Nova Fronteira do Cyber é a Proteção Humana",
+        time: "13:00",
+        desc: "",
+        speaker: "Karina Queiroz",
+        location: "Departamento de Computação da UFSCar (auditório Mauro Biajiz)",
+        icon: "💡",
       },
       {
         title: "Minicurso: Arquitetura de soluções e produtos, Engenharia de prompts e contextos",
