@@ -4,9 +4,12 @@ import { useEffect, useState } from "react";
 import { robotoMono } from "@/utils/fonts";
 
 const lines = [
-  'system.out.println("SECOMP XIV")',
-  "status: unstable",
-  "trying to reconnect...",
+  'System.out.println("SECOMP XIV");',
+  "status: ONLINE",
+  "git commit -m 'fix: agora vai!!'",
+  "npm install café",
+  "while (!palestra.acabou()) { aprender(); }",
+  "// TODO: dormir depois do evento",
 ];
 
 const typingSpeed = 45;   
@@ -66,7 +69,7 @@ export default function TerminalLog({ className = "" }) {
     <div className={`${robotoMono.className} leading-relaxed ${className}`}>
       {displayedLines.map((line, i) => (
         <div key={i} className="whitespace-pre">
-          <span className={i === 1 ? "text-[#FF0000]" : "opacity-80"}>
+          <span className={i === 1 ? "text-[#00FF00]" : "opacity-80"}>
             {`>${line}`}
           </span>
         </div>
