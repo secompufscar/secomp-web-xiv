@@ -221,9 +221,9 @@ export const weekData = [
         icon: "☕",
       },
       {
-        title: "Chatbots de apoio à saúde mental, design de interfaces de usuário apoiado por IA generativa",
+        title: "Cenários complexos para o design de tecnologias interativas - o caso dos chatbots de apoio à saúde mental",
         time: "16:30",
-        desc: "O que deve ter em um bot que saiba conversar sobre saúde mental? Perspectivas da Computação Centrada no Humano. Nesta palestra abordaremos demandas e oportunidades para o desenvolvimento de agentes conversacionais em um cenário crítico como o de saúde mental.",
+        desc: "O que deve ter um bot que saiba conversar sobre saúde mental? Nesta palestra, abordaremos demandas e oportunidades para o desenvolvimento de agentes conversacionais em um cenário crítico, como o de saúde mental, considerando as perspectivas da Computação Centrada no Humano.",
         speaker: "Vânia Paula de Almeida Neris",
         location: "ONOVOLAB",
         icon: "🎤",
