@@ -252,17 +252,9 @@ export const weekData = [
     activities: [
       {
         title: "Desenvolvimento Java para Inteligência Artificial e Machine Learning",
-        time: "09:00",
+        time: "10:00",
         desc: "O desenvolvedor Java pode treinar, executar e integrar modelos de IA diretamente em aplicações Java, sem que seja necessário escrever a aplicação principal em Python. Veremos exemplos de aplicações.",
         speaker: "Carlos F. Gonçalves",
-        location: "Anfiteatro Bento Prado Júnior",
-        icon: "🎤",
-      },
-      {
-        title: "Agilidade e seus paradigmas, benefícios e dificuldades!",
-        time: "10:00",
-        desc: "Como a agilidade pode transformar seu dia a dia na tecnologia, paradigmas criados, os benefícios que ela traz e o poder de transformar o dia a dia de uma organização e as dificuldades de derrubar culturas e mentalidades existentes contra ela.",
-        speaker: "Ricardo Romancini",
         location: "Anfiteatro Bento Prado Júnior",
         icon: "🎤",
       },
