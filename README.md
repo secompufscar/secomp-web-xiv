@@ -61,7 +61,7 @@ npm run dev
     <br/>
     <img src="https://avatars.githubusercontent.com/u/26929251?s=48&v=4" width="40" height="40"/>
     <br/>
-    <sub>Copyright © 2025 - SECOMP UFSCar</sub>
+    <sub>Copyright © 2026 - SECOMP UFSCar</sub>
 </div>
 
 [git-url]: https://git-scm.com/
